@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+<body>
+  <a name="top"></a>
+
+<div class="burger" id="burger-menu">
+  <i class="fas fa-bars" id="bars"></i>
+</div>
+
+<section class="landing" id="#landing">
+  <div class="grid-container">
+    <div class="grid-item grid-1">
+      <h3>D</h3>
+    </div>
+    <div class="grid-item grid-2">
+      <h3>E</h3>
+      <div class="container-space">
+        <div class="mask">
+          Hello.
+        </div>
+      </div>
+    </div>
+    <div class="grid-item grid-3">
+      <h3>S</h3>
+      <div class="box"></div>
+    </div>
+    <div class="grid-item grid-4">
+      <h3>I</h3>
+    </div>
+    <div class="grid-item grid-5">
+      <h3>G</h3>
+    </div>
+    <div class="grid-item grid-6">
+      <h1 data-title="BRYN WEED"><span><a href="#about">BRYN WEED</a></span></h1>
+      <h3>N</h3>
+    </div>
+  </div>
+</section>
+
+<section class="extra">
+  <h4><a style="color: #1a1a1a;"href="#about"><i class="fas fa-angle-down"></i></a></h4>
+</section>
+
+<section class="about" id="about">
+  <div class="content-box"  data-aos="fade-right" data-aos-anchor="#about">
+    <h2>Creativity.</h2>
+    <h3><i class="fas fa-quote-left"></i>&nbsp;Creativity is inventing, experimenting, growing, taking risks, breaking rules, making mistakes and having fun.</h3>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/brynweed/">
+       <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://github.com/Bryn-Weed">
+       <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.facebook.com/bryn.weed">
+       <i class="fab fa-facebook-f"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="showcase" id="work">
+  <div class="grid" data-aos="slide-up" data-aos-anchor="#work">
+    <div class="grid-col item-1" id="content"><p>Services.</p><p style="font-size: 25px;">Use the panels to discover more.</p></div>
+    <div class="grid-col item-2" id="item-2"><p>DESIGN</p><i class="fas fa-pencil-alt"></i></div>
+    <div class="grid-col item-3" id="item-3"><p>DEVELOPMENT</p><i class="fas fa-code"></i></div>
+    <div class="grid-col item-4" id="item-4"><p>USER EXPERIENCE</p><i class="far fa-eye"></i></div>
+    <div class="grid-col item-5" id="item-5"><p>SATISFACTION</p><i class="far fa-smile"></i></div>
+  </div>
+</section>
+
+<div class="menu-overlay" id="overlay">
+  <ul>
+    <li><a href="#top" id="link"><h2>HOME</h2></a></li>
+    <li><a href="#about" id="link"><h2>ABOUT</h2></a></li>
+    <li><a href="#work" id="link"><h2>SHOWCASE</h2></a></li>
+  </ul>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+  AOS.init({
+ duration: 1200
+});
+
+    $('#burger-menu').live('click', function(e) {
+        $('#overlay').toggleClass("visible");
+        $('#bars').toggleClass("rotate");
+    });
+
+    $('#link').live('click', function(e) {
+      $('#overlay').toggleClass("visible");
+    });
+});
+
+$(document).ready(function () {
+            $('#item-2').click(function () {
+                $("#content").html("<p>Design.</p><p class='info'>More than just visually appealing graphics.</p><p class='info'>Everything has a design. Some things are so suitably designed that they are overlooked. Designing around content is beyond simple decoration.</p><a class='button' href='http://improve.socitm.net'>Elegantly simple</a>");
+                return false;
+            });
+            $('#item-3').click(function () {
+                $("#content").html("<p>Development.</p><p class='info'>There are many solutions to many problems, but those solutions are not equally effective. A forward-thinking, problem solving mind is required to bring about the best result.</p><p class='info'> Don't just patch holes in a broken boat. Re-build. Better, stronger, and faster than before.</p>");
+                return false;
+            });
+            $('#item-4').click(function () {
+                $("#content").html("<p>User Experience.</p><p class='info'>Both an Art and a Science.</p><p class='info'>To cater to as many people as possible, certain user needs must be met. The key is to meeting those needs while presenting an enjoyable experience.</p><a class='button' href='https://bryn-weed.github.io/ca/'>Discover UX</a>");
+                return false;
+            });
+            $('#item-5').click(function () {
+                $("#content").html("<p>Satisfaction.</p><p class='info'>What use is a stimulating design if the purpose is discarded?</p><p class='info'>Working with the client leads to beautiful, intuitive experiences for all parties involved. </p><a class='button' href='https://bryn-weed.github.io/wv/'>End result</a>");
+                return false;
+            });
+
+          });
+</script>
+
+</body>
+</html>
