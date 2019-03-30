@@ -55,7 +55,6 @@ section{
   font-size: 30px;
   padding: 10px;
   padding-top: 13px;
-  transform: rotate(90deg);
   cursor: pointer;
   text-align: center;
 }
@@ -98,14 +97,14 @@ section{
 }
 
 .menu-overlay ul{
-  margin-top: 300px;
+  margin-top: 10vh;;
 }
 
 .menu-overlay a:hover{
   color: #fbbc41;
 }
 
-
+.content-box{width: 40%;}
 .grid-item {
   border-right: 0.5px solid #252525;
   font-size: 30px;
@@ -124,8 +123,8 @@ section{
 
 .container-space {
   overflow: auto;
-  top: 8vh;
-  left: 2vw;
+  bottom: 8vh;
+  left: 0vw;
   position: absolute;
   display: inline-block;
   background-color: transparent;
@@ -254,6 +253,26 @@ color: #1a1a1a;
   color: #1a1a1a;
 }
 
+.contact{
+  height: 70vh;
+  width: 70vw;
+  padding:15vw;
+  background-color: #1a1a1a;
+  color: #fbbc41;
+}
+.contact h3{
+color: #fbbc41;
+font-size: 20px;
+margin-top: 10px;
+}
+
+.container-space h3{
+  color: #fbbc41;
+  font-size: 20px !important;
+  opacity: 1 !important;
+  margin-top: 10px;
+}
+
 .grid{
   display: grid;
   grid-template-columns:  33.33% 33.33% 33.33%;
@@ -316,6 +335,9 @@ color: #1a1a1a;
 
 .grid-col.item-2{
 }
+
+.grid-col.item-2:hover{
+}
 .grid-col.item-5{
 }
 
@@ -343,4 +365,9 @@ h4 {
     font-size: 30px;
     text-align: center;
     color: #1a1a1a;
+}
+
+@media only screen and (max-width: 1280px) {
+.content-box{width:80%;}
+.about h3{width:80%;}
 }

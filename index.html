@@ -9,7 +9,7 @@
 
 </head>
 <body>
-  <a name="top"></a>
+  <div style="width: 100vw;"name="top" id="top"></div>
 
 <div class="burger" id="burger-menu">
   <i class="fas fa-bars" id="bars"></i>
@@ -22,15 +22,14 @@
     </div>
     <div class="grid-item grid-2">
       <h3>E</h3>
-      <div class="container-space">
-        <div class="mask">
-          Hello.
-        </div>
+      <div data-aos="slide-up" data-aos-anchor="#top" class="container-space">
+        <h3><i class="fas fa-quote-left"></i>&nbsp;Creativity is inventing, experimenting, growing, taking risks, breaking rules, making mistakes and having fun.</h3>
+      <hr style="width: auto;">
+        <h3>- Mary Lou Cook</h3>
       </div>
     </div>
     <div class="grid-item grid-3">
       <h3>S</h3>
-      <div class="box"></div>
     </div>
     <div class="grid-item grid-4">
       <h3>I</h3>
@@ -39,7 +38,7 @@
       <h3>G</h3>
     </div>
     <div class="grid-item grid-6">
-      <h1 data-title="BRYN WEED"><span><a href="#about">BRYN WEED</a></span></h1>
+      <h1 data-title="BRYN WEED"><span><a href="#top">BRYN WEED</a></span></h1>
       <h3>N</h3>
     </div>
   </div>
@@ -51,29 +50,47 @@
 
 <section class="about" id="about">
   <div class="content-box"  data-aos="fade-right" data-aos-anchor="#about">
-    <h2>Creativity.</h2>
-    <h3><i class="fas fa-quote-left"></i>&nbsp;Creativity is inventing, experimenting, growing, taking risks, breaking rules, making mistakes and having fun.</h3>
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/in/brynweed/">
-       <i class="fab fa-linkedin-in"></i>
-      </a>
-      <a href="https://github.com/Bryn-Weed">
-       <i class="fab fa-github"></i>
-      </a>
-      <a href="https://www.facebook.com/bryn.weed">
-       <i class="fab fa-facebook-f"></i>
-      </a>
-    </div>
+    <h2 style="font-size: 36px;">Hi, I'm Bryn.</h2>
+    <h3>I'm a web developer with a passion for design.</h3>
+    <h3>I provide robust back-end solutions paired with intuitive front-end experiences.</h3>
+    <h3>My goal is to surpass the typical boundaries of web design, so I'm currently learning illustration. Since so many websites look alike these days,
+      it's through the imagery and personality of a brand that people stand out.</h3>
+
+  <hr style="width: auto;">
+    <a href="#work">MY VALUES <i class="fas fa-long-arrow-alt-right"></i></a>
   </div>
 </section>
 
 <section class="showcase" id="work">
   <div class="grid" data-aos="slide-up" data-aos-anchor="#work">
-    <div class="grid-col item-1" id="content"><p>Services.</p><p style="font-size: 25px;">Use the panels to discover more.</p></div>
+    <div class="grid-col item-1" id="content"><p>Values.</p><p style="font-size: 25px;">Use the panels to discover more.</p></div>
     <div class="grid-col item-2" id="item-2"><p>DESIGN</p><i class="fas fa-pencil-alt"></i></div>
     <div class="grid-col item-3" id="item-3"><p>DEVELOPMENT</p><i class="fas fa-code"></i></div>
     <div class="grid-col item-4" id="item-4"><p>USER EXPERIENCE</p><i class="far fa-eye"></i></div>
     <div class="grid-col item-5" id="item-5"><p>SATISFACTION</p><i class="far fa-smile"></i></div>
+  </div>
+<center><h4><a style="color: #1a1a1a;" href="#contact">Interested? <i class="fas fa-long-arrow-alt-right"></i></a></h4></center>
+</section>
+
+<section class="contact" id="contact">
+    <div class="content-box"  data-aos="fade-right" data-aos-anchor="#contact">
+      <h2 style="font-size: 57px;">Let's talk.</h2>
+      <h3>I'm currently working at Socitm, but I'm open to freelance work.</h3>
+      <h3><i class="fas fa-map-marker-alt"></i> &nbsp;Northampton, United Kingdom</h3>
+      <h3><i class="fas fa-phone"></i> &nbsp; +44 7968 474746</h3>
+      <h3><i class="fas fa-paper-plane"></i> &nbsp; <a style="text-decoration:underline"href="mailto:brynweed@gmail.com">brynweed@gmail.com</a></h3>
+      <h3>You can find me here:</h3>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/brynweed/">
+         <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/Bryn-Weed">
+         <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.facebook.com/bryn.weed">
+         <i class="fab fa-facebook-f"></i>
+        </a>
+      </div>
   </div>
 </section>
 
@@ -81,7 +98,8 @@
   <ul>
     <li><a href="#top" id="link"><h2>HOME</h2></a></li>
     <li><a href="#about" id="link"><h2>ABOUT</h2></a></li>
-    <li><a href="#work" id="link"><h2>SHOWCASE</h2></a></li>
+    <li><a href="#work" id="link"><h2>VALUES</h2></a></li>
+    <li><a href="#contact" id="link"><h2>CONTACT</h2></a></li>
   </ul>
 </div>
 
@@ -105,7 +123,7 @@ $(document).ready(function(){
 
 $(document).ready(function () {
             $('#item-2').click(function () {
-                $("#content").html("<p>Design.</p><p class='info'>More than just visually appealing graphics.</p><p class='info'>Everything has a design. Some things are so suitably designed that they are overlooked. Designing around content is beyond simple decoration.</p><a class='button' href='http://improve.socitm.net'>Elegantly simple</a>");
+                $("#content").html("<p>Design.</p><p class='info'>Proper design can bring life to the brand you want to promote. Choosing the proper colours, imagery and personality lays the groundwork for a beautiful user experience.</p><a class='button' href='http://improve.socitm.net'>Elegantly simple</a>");
                 return false;
             });
             $('#item-3').click(function () {
@@ -113,11 +131,11 @@ $(document).ready(function () {
                 return false;
             });
             $('#item-4').click(function () {
-                $("#content").html("<p>User Experience.</p><p class='info'>Both an Art and a Science.</p><p class='info'>To cater to as many people as possible, certain user needs must be met. The key is to meeting those needs while presenting an enjoyable experience.</p><a class='button' href='https://bryn-weed.github.io/ca/'>Discover UX</a>");
+                $("#content").html("<p>User Experience.</p><p class='info'>Both an Art and a Science.</p><p class='info'>To cater to as many people as possible, certain user needs must be met. The key is meeting those needs while providing an enjoyable experience.</p><a class='button' href='https://bryn-weed.github.io/ca/'>Discover UX</a>");
                 return false;
             });
             $('#item-5').click(function () {
-                $("#content").html("<p>Satisfaction.</p><p class='info'>What use is a stimulating design if the purpose is discarded?</p><p class='info'>Working with the client leads to beautiful, intuitive experiences for all parties involved. </p><a class='button' href='https://bryn-weed.github.io/wv/'>End result</a>");
+                $("#content").html("<p>Satisfaction.</p><p class='info'>A design without purpose is just an image.</p><p class='info'>Working with the client leads to beautiful, intuitive experiences for all parties involved. </p><a class='button' href='https://bryn-weed.github.io/wv/'>End result</a>");
                 return false;
             });
 
